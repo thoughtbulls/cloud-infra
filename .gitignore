@@ -11,4 +11,4 @@ crash.log
 .DS_Store
 
 # VS Code local
-.vscode
+.vscode/
