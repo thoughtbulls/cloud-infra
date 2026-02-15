@@ -34,6 +34,7 @@ resource "databricks_mws_storage_configurations" "this" {
   account_id                  = var.databricks_account_id
   storage_configuration_name  = "dp-${var.environment}-storage"
   bucket_name                 = data.terraform_remote_state.storage.outputs.databricks_root_bucket
+  role_arn                    = data.terraform_remote_state.iam.outputs.storage_role_arn
 }
 
 
