@@ -28,22 +28,22 @@ get_layers() {
 
   case "$TARGET_LAYER" in
     network)
-      echo "network iam storage workspace"
-      ;;
-    iam)
-      echo "iam storage workspace"
+      echo "network storage iam workspace"
       ;;
     storage)
-      echo "storage workspace"
+      echo "storage iam workspace"
+      ;;
+    iam)
+      echo "iam workspace"
       ;;
     workspace)
-      echo "network iam storage workspace"
+      echo "network storage iam workspace"
       ;;
     workspace-only)
       echo "workspace"
       ;;
     "" )
-      echo "network iam storage workspace"
+      echo "network storage iam workspace"
       ;;
     *)
       echo "Invalid layer: $TARGET_LAYER"

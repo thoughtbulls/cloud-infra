@@ -10,11 +10,11 @@ do
     workspace)
       run_layer "DATABRICKS WORKSPACE" "infra/databricks-workspace" "$WORKSPACE_BACKEND" "destroy"
       ;;
-    storage)
-      run_layer "STORAGE" "infra/storage" "$STORAGE_BACKEND" "destroy"
-      ;;
     iam)
       run_layer "IAM" "infra/iam" "$IAM_BACKEND" "destroy"
+      ;;
+    storage)
+      run_layer "STORAGE" "infra/storage" "$STORAGE_BACKEND" "destroy"
       ;;
     network)
       run_layer "NETWORK" "infra/network" "$NETWORK_BACKEND" "destroy"
